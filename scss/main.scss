@@ -22,7 +22,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	min-height: 100vh;
+	height: fit-content;
 	padding: 2em;
 	background-image: url('../img/backgrounds/sun.jpg');
 	background-position: center;
