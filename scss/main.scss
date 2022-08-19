@@ -24,7 +24,7 @@ body {
 	align-items: center;
 	height: 100vh;
 	padding: 2em;
-	background-image: url('../img/backgrounds/sun_bg_lq.jpg');
+	background-image: url('../img/backgrounds/sun.jpg');
 	background-position: center;
 	background-size: cover;
 	z-index: 0;
@@ -88,6 +88,10 @@ body {
 
 			.input-error {
 				border: 1px solid #ff0000;
+
+				&:focus {
+					border: 1px solid #ff0000;
+				}
 			}
 
 			.input-error::placeholder {
@@ -156,8 +160,6 @@ body {
 
 	@media (min-width: 768px) {
 		.main {
-			background-image: url('../img/backgrounds/sun_bg_hq.jpg');
-
 			.app-container {
 				width: 70%;
 				max-width: 650px;

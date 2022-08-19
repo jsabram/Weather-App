@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather App ☀️</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
     <main class="main">
         <div class="app-container">
             <div class="top">
-                <h1 class="title">Kraków</h1>
+                <h1 class="title"></h1>
                 <input type="text" class="input" placeholder="Enter city name">
                 <div class="weather-info">
-                    <p class="temperature">7 °C</p>
+                    <p class="temperature"></p>
                     <img src="img/icons/sun.svg" alt="Icon of a current weather status" class="weather-icon">
                 </div>
             </div>
@@ -27,15 +27,19 @@
                 <div class="cards">
                     <div class="card">
                         <h2 class="card-title">Weather:</h2>
-                        <p class="card-text weather">Sunny</p>
+                        <p class="card-text weather"></p>
                     </div>
                     <div class="card">
-                        <h2 class="card-title">Wind:</h2>
-                        <p class="card-text wind">15 km/h</p>
+                        <h2 class="card-title">Pressure:</h2>
+                        <p class="card-text pressure"></p>
                     </div>
                     <div class="card">
                         <h2 class="card-title">Humidity:</h2>
-                        <p class="card-text humidity">36%</p>
+                        <p class="card-text humidity"></p>
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Wind:</h2>
+                        <p class="card-text wind"></p>
                     </div>
                 </div>
             </div>
@@ -43,6 +47,9 @@
         <div class="shadow">
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

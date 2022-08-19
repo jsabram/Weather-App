@@ -31,7 +31,7 @@ body {
           align-items: center;
   height: 100vh;
   padding: 2em;
-  background-image: url("../img/backgrounds/sun_bg_lq.jpg");
+  background-image: url("../img/backgrounds/sun.jpg");
   background-position: center;
   background-size: cover;
   z-index: 0;
@@ -140,6 +140,10 @@ body {
   border: 1px solid #ff0000;
 }
 
+.main .app-container .top .input-error:focus {
+  border: 1px solid #ff0000;
+}
+
 .main .app-container .top .input-error::-webkit-input-placeholder {
   color: #ff0000;
 }
@@ -235,9 +239,6 @@ body {
 }
 
 @media (min-width: 550px) and (min-width: 768px) {
-  .main {
-    background-image: url("../img/backgrounds/sun_bg_hq.jpg");
-  }
   .main .app-container {
     width: 70%;
     max-width: 650px;
