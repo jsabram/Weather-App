@@ -34,22 +34,22 @@ const getWeather = () => {
 
 			if (status >= 200 && status < 300) {
 				weatherIcon.setAttribute('src', 'img/icons/storm.svg');
-				main.style.backgroundImage = `url('../img/backgrounds/storm.jpg')`;
+				main.style.backgroundImage = `url('img/backgrounds/storm.jpg')`;
 			} else if (status >= 300 && status < 600) {
 				weatherIcon.setAttribute('src', 'img/icons/rain.svg');
-				main.style.backgroundImage = `url('../img/backgrounds/rain.jpg')`;
+				main.style.backgroundImage = `url('img/backgrounds/rain.jpg')`;
 			} else if (status >= 600 && status < 700) {
 				weatherIcon.setAttribute('src', 'img/icons/snow.svg');
-				main.style.backgroundImage = `url('../img/backgrounds/snow.jpg')`;
+				main.style.backgroundImage = `url('img/backgrounds/snow.jpg')`;
 			} else if (status >= 700 && status < 800) {
 				weatherIcon.setAttribute('src', 'img/icons/fog.svg');
-				main.style.backgroundImage = `url('../img/backgrounds/fog.jpg')`;
+				main.style.backgroundImage = `url('img/backgrounds/fog.jpg')`;
 			} else if (status === 800) {
 				weatherIcon.setAttribute('src', 'img/icons/sun.svg');
-				main.style.backgroundImage = `url('../img/backgrounds/sun.jpg')`;
+				main.style.backgroundImage = `url('img/backgrounds/sun.jpg')`;
 			} else if (status > 800) {
 				weatherIcon.setAttribute('src', 'img/icons/clouds.svg');
-				main.style.backgroundImage = `url('../img/backgrounds/clouds.jpg')`;
+				main.style.backgroundImage = `url('img/backgrounds/clouds.jpg')`;
 			}
 		})
 		.catch(() => {
