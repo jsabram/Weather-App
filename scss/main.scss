@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: rgb(248, 248, 248);
+	font-size: 1.6rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+
+.main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 2em;
+	background-image: url('../img/backgrounds/sun_bg_lq.jpg');
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+
+	.shadow {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: #00000066;
+		z-index: -1;
+	}
+
+	.app-container {
+		padding: 1em 2em;
+		background-color: #00000099;
+		border-radius: 1rem;
+		box-shadow: 0 0 1rem #000;
+
+		.top {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-bottom: 1em;
+			border-bottom: 1px solid #f8f8f84d;
+
+			.title {
+				margin-bottom: 0.5em;
+				font-size: 3rem;
+				font-weight: 200;
+				text-transform: uppercase;
+			}
+
+			.input {
+				width: 100%;
+				max-width: 600px;
+				padding: 0.5em 1em;
+				margin-bottom: 1em;
+				background: none;
+				outline: none;
+				border: 1px solid #f8f8f84d;
+				border-radius: 1rem;
+				color: #f8f8f8;
+
+				&:focus {
+					border: 1px solid #f8f8f8;
+				}
+			}
+
+			.input,
+			.input::placeholder {
+				font-size: 1.6rem;
+				font-family: 'Raleway', sans-serif;
+			}
+
+			.input::placeholder {
+				color: #f8f8f84d;
+			}
+
+			.input-error {
+				border: 1px solid #ff0000;
+			}
+
+			.input-error::placeholder {
+				color: #ff0000;
+			}
+
+			.weather-info {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				margin-bottom: 1em;
+
+				.temperature {
+					font-size: 4rem;
+					margin-right: 0.5em;
+				}
+
+				.weather-icon {
+					height: 70px;
+				}
+			}
+		}
+
+		.bottom {
+			.card {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				margin-bottom: 1em;
+
+				.card-title {
+					margin-bottom: 0.2em;
+				}
+
+				.card-text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 550px) {
+	.main {
+		.app-container {
+			.bottom {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.cards {
+					display: flex;
+					justify-content: space-evenly;
+					flex-direction: row;
+					width: 100%;
+
+					.card {
+						margin: 1em;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.main {
+			background-image: url('../img/backgrounds/sun_bg_hq.jpg');
+
+			.app-container {
+				width: 70%;
+				max-width: 650px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.main {
+		.app-container {
+			.top {
+				.title {
+					font-size: 5rem;
+				}
+
+				.input,
+				.input::placeholder {
+					font-size: 1.8rem;
+				}
+
+				.weather-info {
+					justify-content: space-evenly;
+					margin-bottom: 2em;
+
+					.temperature {
+						margin: 0;
+						font-size: 7rem;
+					}
+
+					.weather-icon {
+						height: 100px;
+						width: 100px;
+					}
+				}
+			}
+
+			.bottom {
+				.cards {
+					.card {
+						.card-title {
+							font-size: 3rem;
+						}
+
+						.card-text {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

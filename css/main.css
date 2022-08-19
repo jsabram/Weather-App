@@ -1,0 +1,288 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #f8f8f8;
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+.main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 2em;
+  background-image: url("../img/backgrounds/sun_bg_lq.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.main .shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000066;
+  z-index: -1;
+}
+
+.main .app-container {
+  padding: 1em 2em;
+  background-color: #00000099;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
+}
+
+.main .app-container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #f8f8f84d;
+}
+
+.main .app-container .top .title {
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.main .app-container .top .input {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  background: none;
+  outline: none;
+  border: 1px solid #f8f8f84d;
+  border-radius: 1rem;
+  color: #f8f8f8;
+}
+
+.main .app-container .top .input:focus {
+  border: 1px solid #f8f8f8;
+}
+
+.main .app-container .top .input,
+.main .app-container .top .input::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main .app-container .top .input,
+.main .app-container .top .input:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main .app-container .top .input,
+.main .app-container .top .input::-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main .app-container .top .input,
+.main .app-container .top .input::placeholder {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main .app-container .top .input::-webkit-input-placeholder {
+  color: #f8f8f84d;
+}
+
+.main .app-container .top .input:-ms-input-placeholder {
+  color: #f8f8f84d;
+}
+
+.main .app-container .top .input::-ms-input-placeholder {
+  color: #f8f8f84d;
+}
+
+.main .app-container .top .input::placeholder {
+  color: #f8f8f84d;
+}
+
+.main .app-container .top .input-error {
+  border: 1px solid #ff0000;
+}
+
+.main .app-container .top .input-error::-webkit-input-placeholder {
+  color: #ff0000;
+}
+
+.main .app-container .top .input-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.main .app-container .top .input-error::-ms-input-placeholder {
+  color: #ff0000;
+}
+
+.main .app-container .top .input-error::placeholder {
+  color: #ff0000;
+}
+
+.main .app-container .top .weather-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.main .app-container .top .weather-info .temperature {
+  font-size: 4rem;
+  margin-right: 0.5em;
+}
+
+.main .app-container .top .weather-info .weather-icon {
+  height: 70px;
+}
+
+.main .app-container .bottom .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.main .app-container .bottom .card .card-title {
+  margin-bottom: 0.2em;
+}
+
+.main .app-container .bottom .card .card-text {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 550px) {
+  .main .app-container .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .app-container .bottom .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .main .app-container .bottom .cards .card {
+    margin: 1em;
+  }
+}
+
+@media (min-width: 550px) and (min-width: 768px) {
+  .main {
+    background-image: url("../img/backgrounds/sun_bg_hq.jpg");
+  }
+  .main .app-container {
+    width: 70%;
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main .app-container .top .title {
+    font-size: 5rem;
+  }
+  .main .app-container .top .input,
+  .main .app-container .top .input::-webkit-input-placeholder {
+    font-size: 1.8rem;
+  }
+  .main .app-container .top .input,
+  .main .app-container .top .input:-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  .main .app-container .top .input,
+  .main .app-container .top .input::-ms-input-placeholder {
+    font-size: 1.8rem;
+  }
+  .main .app-container .top .input,
+  .main .app-container .top .input::placeholder {
+    font-size: 1.8rem;
+  }
+  .main .app-container .top .weather-info {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 2em;
+  }
+  .main .app-container .top .weather-info .temperature {
+    margin: 0;
+    font-size: 7rem;
+  }
+  .main .app-container .top .weather-info .weather-icon {
+    height: 100px;
+    width: 100px;
+  }
+  .main .app-container .bottom .cards .card .card-title {
+    font-size: 3rem;
+  }
+  .main .app-container .bottom .cards .card .card-text {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
